@@ -4,9 +4,9 @@
       v-overlay(:opacity="1" :value="displayOverlay")
         v-progress-circular(indeterminate size="64")
       v-app-bar(color="#161616" dark)
-        v-app-bar-nav-icon(@click="drawer = true")
+        v-app-bar-nav-icon.hidden-md-and-up(@click="drawer = true")
         v-tabs.hidden-sm-and-down(align-with-title :value="$route.name")
-          v-tab(v-for='(item, key) in items' :key='key' v-bind='item.binds' nuxt)
+          v-tab.ml-0(v-for='(item, key) in items' :key='key' v-bind='item.binds' nuxt)
             v-icon.mr-2(v-text='item.icon')
             span(v-text='item.title')
         v-spacer
