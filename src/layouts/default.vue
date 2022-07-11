@@ -23,9 +23,12 @@
                 v-icon(v-text='item.icon')
               v-list-item-title(v-text='item.title')
       nuxt
-      v-footer(dark padless app)
+      v-footer(dark padless)
         v-card.flex(flat tile)
-          v-card-text.py-2.white--text.text-center {{ new Date().getFullYear() }} — TacxTV
+          v-card-text.py-2.white--text.text-center
+            small Rustons Amis est un serveur Rust© gratuit et n’est en aucun cas affilié à Facepunch Studios©.
+            v-spacer
+            span {{ new Date().getFullYear() }} — TacxTV
 </template>
 
 <script lang='ts'>
