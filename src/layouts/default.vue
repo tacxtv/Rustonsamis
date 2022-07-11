@@ -12,7 +12,7 @@
         v-spacer
         v-btn.mx-4.white--text(color="blue-grey" fab icon href='https://discord.gg/NURBhQhY3f' target='_blank')
           v-icon(color="#738ADB" large dark) mdi-discord
-        v-btn(color="primary" to='/register')
+        //v-btn(color="primary" to='/register')
           v-icon.mr-2(left) mdi-account-plus
           span S'inscrire
       v-navigation-drawer(v-model="drawer" absolute temporary)
@@ -50,22 +50,22 @@ export default class Default extends Vue {
           exact: true,
         },
       },
-      {
-        title: 'Carte',
-        icon: 'mdi-map',
-        binds: {
-          href: "http://188.165.187.225:27040/",
-          target:'_blank',
-        },
-      },
-      {
-        title: 'Règles',
-        icon: 'mdi-ruler',
-        binds: {
-          to: '/rules',
-          value: '/rules',
-        },
-      },
+      // {
+      //   title: 'Carte',
+      //   icon: 'mdi-map',
+      //   binds: {
+      //     href: "http://188.165.187.225:27040/",
+      //     target:'_blank',
+      //   },
+      // },
+      // {
+      //   title: 'Règles',
+      //   icon: 'mdi-ruler',
+      //   binds: {
+      //     to: '/rules',
+      //     value: '/rules',
+      //   },
+      // },
     ]
   }
 
