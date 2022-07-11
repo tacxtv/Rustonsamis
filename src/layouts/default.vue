@@ -22,8 +22,7 @@
               v-list-item-icon
                 v-icon(v-text='item.icon')
               v-list-item-title(v-text='item.title')
-      v-container#container.pa-0(fluid)
-        nuxt
+      nuxt
       v-footer(dark padless app)
         v-card.flex(flat tile)
           v-card-text.py-2.white--text.text-center {{ new Date().getFullYear() }} — TacxTV
