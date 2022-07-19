@@ -12,7 +12,7 @@
         v-spacer
         v-btn.mx-4.white--text(color="blue-grey" fab icon href='https://discord.gg/NURBhQhY3f' target='_blank')
           v-icon(color="#738ADB" large dark) mdi-discord
-        //v-btn(color="primary" href='rustonsamispanel.tacxtv.fr/?login')
+        v-btn(color="primary" href='https://rustonsamispanel.tacxtv.fr/?login')
           v-icon.mr-2(left) mdi-account-plus
           span S'inscrire
       v-navigation-drawer(v-model="drawer" absolute temporary)
@@ -60,14 +60,22 @@ export default class Default extends Vue {
       //     target:'_blank',
       //   },
       // },
-      // {
-      //   title: 'Règles',
-      //   icon: 'mdi-ruler',
-      //   binds: {
-      //     to: '/rules',
-      //     value: '/rules',
-      //   },
-      // },
+      {
+        title: 'Règles',
+        icon: 'mdi-ruler',
+        binds: {
+          to: '/rules',
+          value: '/rules',
+        },
+      },
+      {
+        title: 'Tips',
+        icon: 'mdi-flag',
+        binds: {
+          to: '/tips',
+          value: '/tips',
+        },
+      },
     ]
   }
 
