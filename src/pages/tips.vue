@@ -36,12 +36,21 @@ export default class Rules extends Vue {
       {
         title: 'KIT',
         text: `
-        <div>Chaque joueur à le droit à un kit de départ et un kit journalier. Pour les obtenirs, ouvre le tchat en jeu avec la touche T et écris /kit, un panneau va s’ouvrir, clic pour obtenir ton dû.</div>
+        <p>Chaque joueur à le droit à un kit de départ et un kit journalier.</p>
+        <p>Pour les obtenir, ouvre le tchat en jeu avec la <b class='error--text'>touche T</b> et écris <b class='error--text'>/kit</b>, un panneau va s’ouvrir, choisi ton kit. <b class='error--text'>Chaque kit est individuel et personnel</b>, à vous de choisir comment l’utiliser pour vous ou pour votre équipe.</p>
         <br>
         <small>
           <ul>
-            <li>Kit de départ : S'obtient une seule fois, nourriture, bois, pierre, métal, cuir vous sont fournis pour vous permettre de démarrer sur de bonnes bases. Recommandation de l’équipe : Prenez votre kit à un moment opportun, le jeu étant un jeu où vous pouvez mourir et perdre votre inventaire, il est recommandé de vous le drop quand vous serez installé.</li>
-            <li class='mt-4'>Kit journalier : S'obtient chaque jour. Un fumigène de largage aérien vous sera drop, une fois reçu, jetez-le dans la nature, il faudra quelque minute pour qu’un avion dépose un largage aérien à vous drop. (Toute perte ou vol ne sera pas remboursé). Recommandation de l’équipe : Jetez votre drop aérien en sécurité, vous pouvez vous le faire voler par n’importe quel joueur et à n’importe quel moment. (Toute perte ou vol ne sera pas remboursé).</li>
+            <li>
+            <b class='error--text'>Kit de départ</b> : S'obtient <b class='error--text'>une seule fois</b>, nourriture, bois, pierre, métal, cuir vous sont fournis pour vous permettre de démarrer sur de bonnes bases.
+            <br>
+            <small><i>Recommandation de l’équipe : Prenez votre kit à un moment opportun, le jeu étant un jeu où vous pouvez mourir et perdre votre inventaire, il est recommandé de vous le drop quand vous serez installé. (Toute perte ou vol ne sera pas remboursé).</i></small>
+            </li>
+            <li class='mt-4'>
+            <b class='error--text'>Kit journalier</b> : S'obtient <b class='error--text'>chaque jour</b>. Un fumigène de largage aérien vous sera drop, une fois reçu, jetez-le dans la nature, il faudra quelque minute pour qu’un avion dépose le largage aérien.
+            <br>
+            <small><i>Recommandation de l’équipe : Jetez votre drop aérien en sécurité, vous pouvez vous le faire voler par n’importe quel joueur et à n’importe quel moment. (Toute perte ou vol ne sera pas remboursé).</i></small>
+            </li>
           </ul>
         </small>
         `,
@@ -54,7 +63,16 @@ export default class Rules extends Vue {
       },
       {
         title: 'Build',
-        text: 'Si tu veux survivre au monde hostile, il faut construire ! Pour commencer, fais-toi un plan de construction, sélectionne-le et fais clic droit pour choisir la construction dont tu as besoin.<br> Chaque construction à besoin de fondation, de mur et d’un toit, après fait appel à ton art architectural pour le design de ta base. Ensuite, il te faudra un marteau pour fortifier et changer la matière de ta base. Pour cela, rien de plus simple, clic droit, et choisi ta fortification.',
+        text: `
+        <p>Si tu veux survivre dans ce monde hostile, il faut construire ! Pour commencer, fais-toi un <b class='error--text'>plan de construction et un marteau</b>. Chaque construction à besoin <b class='error--text'>de fondation, de mur et d’un toit</b>, fait appel à ton art architectural pour le design de ta base.</p>
+        <br>
+        <small>
+          <ul>
+            <li>Plan de construction : Sert à <b class='error--text'>construire</b>, faite clic droit pour sélectionner l’objet que tu veux construire.</li>
+            <li>Marteau : Sert à <b class='error--text'>fortifier les constructions</b> dans la matière de votre choix selon les ressources disponibles sur vous.</li>
+          </ul>
+        </small>
+        `,
         image: {
           binds: {
             width: '400px',
@@ -64,7 +82,18 @@ export default class Rules extends Vue {
       },
       {
         title: 'Boîte à outils',
-        text: 'Après avoir construit vos premiers édifices, il faudra placer une boîte à outil. <br>Cette boite à outil vous permettra dans un périmètre restreint de protéger et identifier la construction à vous et votre équipe, mais aussi à éviter les dégâts naturels de l’usure. Pour cela, il faudra la charger d’un certain nombre de matières premières selon les matériaux de votre construction et pensez à vérifier qu’il y a bien assez de ressource pour la garder en état.',
+        text: `
+          <p>Après avoir construit vos premiers édifices, <b class='error--text'>il faudra placer une boîte à outils.</b></p>
+          <p>Cette boite à outil vous permettra dans un périmètre restreint de <b class='error--text'>protéger et identifier la construction à vous et votre équipe, mais aussi à éviter les dégâts naturels de l’usure</b>. Pour cela, il faudra la charger d’un certain nombre de matières premières selon les matériaux de votre construction.</p>
+          <br>
+          <small>
+          Recommandation de l’équipe :
+          <ul>
+            <li>Pensez à vérifier qu’il y a bien assez de ressources pour garder en état votre construction.</li>
+            <li>Mettez la en sécurité, elle est la protection de votre base. <b class='error--text'>Si elle tombe, votre structure devient vulnérable</b>.</li>
+          </ul>
+          </small>
+        `,
         image: {
           binds: {
             width: '400px',
@@ -75,17 +104,21 @@ export default class Rules extends Vue {
       {
         title: 'Anti raid off',
         text: `
-          <div>Pour une meilleure expérience de jeu pour tous les joueurs,un anti raid off est mis en place. Si aucun joueur de l’équipe n’est connecté et selon le laps de déconnection, il sera compliqué de faire des dégâts à la base de vos adversaires. Ceci est mis en place afin de permettre au joueur de pouvoir se défendre, cependant il n’est pas interdit de raid une base inerte, cela prendra simplement plus de temps.</div>
+          <p>Pour une meilleure expérience de jeu pour tous les joueurs, un anti raid off a été déployé.</p>
+          <p><b class='error--text'>Si aucun joueur de l’équipe que vous voulez raid n’est connecté et selon le laps de déconnection, il sera compliqué de faire des dégâts à la base de vos adversaires.</b></p>
+          <p>Ceci est mis en place afin de permettre au joueur de pouvoir se défendre, cependant il n’est pas interdit de raid une base inerte, cela vous prendra simplement plus de temps.</p>
           <br>
-          <div>Protection en fonction du temps d'AFK:</div>
-          <ul>
-            <li>0h à 2h: 100%</li>
-            <li>2h à 4h: 80%</li>
-            <li>4h à 12h: 60%</li>
-            <li>12h à 24h: 40%</li>
-            <li>24h à 48h: 20%</li>
-            <li>48h et +: 0%</li>
-          </ul>
+          <small>
+            <div>Protection en fonction du temps d'AFK:</div>
+            <ul>
+              <li>0h à 2h: 100%</li>
+              <li>2h à 4h: 80%</li>
+              <li>4h à 12h: 60%</li>
+              <li>12h à 24h: 40%</li>
+              <li>24h à 48h: 20%</li>
+              <li>48h et +: 0%</li>
+            </ul>
+          </small>
         `,
         image: {
           binds: {
@@ -96,7 +129,9 @@ export default class Rules extends Vue {
       },
       {
         title: 'Semi PVP/RP',
-        text: 'Nous tenons à ce que l’expérience de chaque joueur soit la plus satisfaisante possible, peu importe le niveau. <br>Le serveur est donc semi RP, ce qui veut dire qu’il vous faut un contexte pour tuer un adversaire. Il n’est donc pas recommandé de tirer à vue sans raison.',
+        text: `
+        <p>Nous tenons à ce que l’expérience de chaque joueur soit la plus satisfaisante possible, peu importe votre niveau. Le serveur est donc semi RP, ce qui veut dire qu’<b class='error--text'>il vous faut un contexte pour tuer un adversaire</b>. Il n’est donc pas recommandé de tirer à vue sans raison, essayez de communiquer.</p>
+        `,
         image: {
           binds: {
             width: '300px',
@@ -107,7 +142,7 @@ export default class Rules extends Vue {
       {
         title: 'Clan',
         text: `
-          <div>Pour vous regrouper avec vos amis dans un clan, vous pouvez en créer un via des commandes dediés.</div>
+          <div>Pour vous regrouper avec <b class='error--text'>vos amis dans un clan</b>, vous pouvez en créer un via des commandes dediés.</div>
           <br>
           <ul>
             <li><b>/clanhelp</b> : Aide générale pour les clans</li>
