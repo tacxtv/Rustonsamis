@@ -52,14 +52,14 @@ export default class Default extends Vue {
           exact: true,
         },
       },
-      // {
-      //   title: 'Carte',
-      //   icon: 'mdi-map',
-      //   binds: {
-      //     href: "http://188.165.187.225:27040/",
-      //     target:'_blank',
-      //   },
-      // },
+      {
+        title: 'Carte',
+        icon: 'mdi-map',
+        binds: {
+          href: "http://188.165.187.225:27040/",
+          target:'_blank',
+        },
+      },
       {
         title: 'Règles',
         icon: 'mdi-ruler',
