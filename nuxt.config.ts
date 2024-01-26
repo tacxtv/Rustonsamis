@@ -7,6 +7,10 @@ import { NuxtConfig } from '@nuxt/types'
 export default <NuxtConfig>{
   telemetry: false,
   srcDir: 'src/',
+  target: 'static',
+  router: {
+    base: '/rustonsamis/'
+  },
   head: {
     title: 'Rustons Amis',
     htmlAttrs: {
