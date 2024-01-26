@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  Factory drive module for NestJS framework
+  Rustonsamis website built with <a href="https://nuxtjs.org/" target="blank">Nuxt.js</a> and <a href="https://vuejs.org/" target="blank">Vue 2</a>.
 </p>
 
 <p align="center">
