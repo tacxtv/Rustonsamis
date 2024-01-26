@@ -70,7 +70,7 @@
                 span.red--text.border-section-text.font-weight-bold vers la victoire
       v-container#container.pa-0(fluid)
     v-card
-      v-parallax.section-2(height="550" style='border-radius: 0;' src="https://www.gamelivestory.com/images/article/rust-25-pro-tips-you-need-to-know-main.webp")
+      v-parallax.section-2(height="550" style='border-radius: 0;' src="https://i.pinimg.com/originals/6f/74/a7/6f74a77b7c7edf1cbc19f8dbfa7ec8ca.jpg")
 </template>
 
 <style>

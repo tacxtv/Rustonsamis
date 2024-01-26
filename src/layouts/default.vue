@@ -11,10 +11,11 @@
             span(v-text='item.title')
         v-spacer
         v-btn.mx-4.white--text(color="blue-grey" fab icon href='https://discord.gg/NURBhQhY3f' target='_blank')
-          v-icon(color="#738ADB" large dark) mdi-discord
-        v-btn(color="primary" href='https://rustonsamispanel.tacxtv.fr/?login')
-          v-icon.mr-2(left) mdi-account-plus
-          span S'inscrire
+          //v-icon(color="#738ADB" large dark)
+          img(src='https://www.svgrepo.com/download/353655/discord-icon.svg' style="color: white;" alt='discord' width='24' height='24')
+        //v-btn(color="primary" href='https://rustonsamispanel.tacxtv.fr/?login')
+        //  v-icon.mr-2(left) mdi-account-plus
+        //  span S'inscrire
       v-navigation-drawer(v-model="drawer" absolute temporary)
         v-list(nav dense)
           v-list-item-group(v-model="group" active-class="primary--text text--accent-4")
@@ -28,7 +29,7 @@
           v-card-text.py-2.white--text.text-center
             small Rustons Amis est un serveur Rust© gratuit et n’est en aucun cas affilié à Facepunch Studios©.
             v-spacer
-            span {{ new Date().getFullYear() }} — TacxTV
+            span 2022 — TacxTV
 </template>
 
 <script lang='ts'>
@@ -52,14 +53,14 @@ export default class Default extends Vue {
           exact: true,
         },
       },
-      {
-        title: 'Carte',
-        icon: 'mdi-map',
-        binds: {
-          href: "http://188.165.187.225:27040/",
-          target:'_blank',
-        },
-      },
+      // {
+      //   title: 'Carte',
+      //   icon: 'mdi-map',
+      //   binds: {
+      //     href: "http://188.165.187.225:27040/",
+      //     target:'_blank',
+      //   },
+      // },
       {
         title: 'Règles',
         icon: 'mdi-ruler',
