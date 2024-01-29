@@ -1,5 +1,3 @@
-'use strict'
-
 import colors from 'vuetify/src/util/colors'
 import { NuxtConfig } from '@nuxt/types'
 
